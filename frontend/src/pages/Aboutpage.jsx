@@ -1,5 +1,7 @@
+import Knowus from "../components/Knowus";
+
 const Aboutpage = () => {
-  return <div>About</div>;
+  return <Knowus />;
 };
 
 export default Aboutpage;

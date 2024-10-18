@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 
 import EventCard from "./ui/EventCard";
-import Button from "./ui/Button";
+import { TextButton } from "./ui/Button";
 
 const Events = () => {
   const [currEvents, setCurrEvents] = useState(true);
@@ -23,8 +23,6 @@ const Events = () => {
     if (currEvents && shouldScroll) {
       scroller.current.scrollIntoView({
         behavior: "smooth",
-        block: "start",
-        inline: "center",
       });
       setShouldScroll(false); // Reset scroll flag
     }
@@ -54,9 +52,9 @@ const Events = () => {
         </div>
       </div>
       <div className="w-full flex justify-center items-center">
-        <Button onClick={toggleEvents}>
+        <TextButton onClick={toggleEvents}>
           {currEvents ? "See All" : "See Less"}
-        </Button>
+        </TextButton>
       </div>
     </section>
   );

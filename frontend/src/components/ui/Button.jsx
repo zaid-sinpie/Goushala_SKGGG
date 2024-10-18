@@ -29,10 +29,9 @@ export const ButtonFull = ({ children, ...props }) => {
   );
 };
 
-export const TextButton = ({ children, link }, props) => {
+export const TextButton = ({ children, ...props }) => {
   return (
     <Link
-      to={link}
       {...props}
       className="bg-darkTextBtnBg text-text px-10 py-2 rounded-full shadow-lg hover:underline"
     >

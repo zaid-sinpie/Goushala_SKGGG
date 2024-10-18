@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 
 import Task from "./ui/Task";
-import Button from "./ui/Button";
+import { TextButton } from "./ui/Button";
 
 const Tasks = () => {
   const [currEvents, setCurrEvents] = useState(true);
@@ -59,9 +59,9 @@ const Tasks = () => {
         </div>
       </div>
       <div className="w-full flex justify-center items-center">
-        <Button onClick={toggleEvents}>
-          {currEvents ? "See All" : "See Less"}
-        </Button>
+        <TextButton onClick={toggleEvents}>
+          {currEvents ? "See All Tasks" : "See Less"}
+        </TextButton>
       </div>
     </section>
   );
