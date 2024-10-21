@@ -13,11 +13,11 @@ const naviagtionLinks = [
     id: 2,
     url: "about",
   },
-  {
-    name: "Contact",
-    id: 3,
-    url: "contact",
-  },
+  // {
+  //   name: "Contact",
+  //   id: 3,
+  //   url: "contact",
+  // },
   {
     name: "Donate",
     id: 4,

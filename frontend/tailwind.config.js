@@ -17,7 +17,9 @@ export default {
       dullText: "#e4e4e4",
       calmbg: "#FFFAFA",
       stroke: "#CDCDCD",
-      label:"#525252",
+      label: "#525252",
+      slate50: "#f8fafc",
+      red50: "#fef2f2",
     },
     fontFamily: {
       cursive: '"Cedarville Cursive", cursive;',
