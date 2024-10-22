@@ -5,7 +5,7 @@ import Landingpage from "./pages/Landingpage";
 import Homepage from "./pages/Homepage";
 import { action as formDataAction } from "./pages/Contact";
 import Aboutpage from "./pages/Aboutpage";
-import DonatePage from "./pages/DonatePage";
+import DonatePage, { action as donateAction } from "./pages/DonatePage";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +28,7 @@ const router = createBrowserRouter([
       {
         path: "donate",
         element: <DonatePage />,
+        action: donateAction,
       },
     ],
   },
