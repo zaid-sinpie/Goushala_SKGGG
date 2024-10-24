@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import logo from "/logo.png";
 import Button from "../ui/Button";
 
@@ -30,7 +32,7 @@ const Card = () => {
           Bring colors to there life’s
         </h1>
         <div className="flex gap-4">
-          <Button>Donate</Button>
+        <Link to='/root/donate'><Button>Donate</Button></Link>
           <Button>Adopt</Button>
         </div>
       </div>

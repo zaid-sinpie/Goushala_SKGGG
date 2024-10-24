@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import Button from "./ui/Button";
 
 import logo from "/logo.png";
@@ -28,7 +30,9 @@ const Hero = () => {
           </p>
         </div>
         <span className="text-sm flex gap-4 items-center justify-center">
-          <Button>DONATE</Button>
+          <Link to='/root/donate'>
+            <Button>DONATE</Button>
+          </Link>
           <Button>ADOPT</Button>
         </span>
       </article>

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import cowBg from "../../assets/cow-img2.png";
+import cowBg from "/cow-img2.png";
 
 const EventCard = ({ img, title, paragraph, link }) => {
   return (

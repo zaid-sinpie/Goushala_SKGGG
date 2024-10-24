@@ -12,7 +12,7 @@ import logo from "/logo.png";
 const DonatePage = () => {
   return (
     <section className="h-screen w-full max-2xl:h-auto bg-calmbg overflow-hidden flex max-2xl:flex-col max-xl:flex-col max-sm:flex-col px-2 max-2xl:py-24 max-xl:py-20 max-sm:py-10 justify-between items-center relative">
-      <div className="w-[50%] max-2xl:w-full max-xl:w-full max-sm:w-full h-full bg-calmbg flex flex-col justify-center items-center gap-5 shadow-md z-10 py-10">
+      <div className="w-[50%] max-2xl:border max-2xl:border-dullText max-2xl:rounded-md max-2xl:w-full max-xl:w-full max-sm:w-full h-full bg-calmbg flex flex-col justify-center items-center gap-5 max-2xl:shadow-md z-10 py-10">
         <div className="flex flex-col items-center justify-center">
           <img
             src={logo}
@@ -41,13 +41,13 @@ const DonatePage = () => {
           <ButtonFull type="submit">DONATE</ButtonFull>
         </Form>
       </div>
-      <div className="w-[50%] h-full bg-img1 bg-center">
+      <div className="w-[50%] h-full bg-img1 bg-center flex justify-center items-center max-2xl:hidden">
         <img
           src={
             "https://yt3.ggpht.com/W5KUfEayQcQSAAXgv7fgfwAlii6K0HCUFTGoEu6doAbJJCibRHrgImzaObe5Oyq0m6rnjmha5YtSRQ=s640-rw-nd-v1"
           }
           alt=""
-          className="w-full "
+          className="w-full"
         />
       </div>
       <ToastContainer />
@@ -63,7 +63,7 @@ export const action = async function ({ request, params }) {
   const data = Object.fromEntries(formData.entries());
   console.log(data);
   try {
-    const response = await fetch("http/locahost:3000", {
+    const response = await fetch("http://localhost:3000/donate", {
       headers: {
         "Content-Type": "application/json",
       },

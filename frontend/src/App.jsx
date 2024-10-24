@@ -6,11 +6,13 @@ import Homepage from "./pages/Homepage";
 import { action as formDataAction } from "./pages/Contact";
 import Aboutpage from "./pages/Aboutpage";
 import DonatePage, { action as donateAction } from "./pages/DonatePage";
+import ErrorPage from "./pages/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Landingpage />,
+    errorElement: <ErrorPage />,
   },
   {
     path: "/root",

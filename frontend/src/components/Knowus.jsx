@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import logo from "/logo.png";
-import bg1 from "../assets/cow-bgImg0.png";
+import bg1 from "/cow-bgImg0.png";
 
 import Button from "./ui/Button";
 
