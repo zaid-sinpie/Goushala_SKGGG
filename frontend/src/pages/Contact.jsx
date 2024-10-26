@@ -28,11 +28,17 @@ const Contact = () => {
         </div>
       </div>
       <footer className="absolute bottom-0 left-0 w-full bg-dark flex justify-around items-center px-1 py-2 text-text max-xl:flex-col max-sm:text-xs max-sm:text-center">
-        <h2>
-          Email :- mailtoshrikruhsnagokuldamegoushala@gmail.com | 24/7 Mon - Sun{" "}
+        <h2 className="flex gap-2 items-center justify-center">
+          <i className="fa-solid fa-envelope"></i>Email :-
+          mailtoshrikruhsnagokuldamegoushala@gmail.com | 24/7 Mon - Sun{" "}
         </h2>
-        <h2>Phone:- +91 1234567890</h2>
-        <h2>Addresss:- Waralegaon, South Solapur </h2>
+        <h2 className="flex gap-2 items-center justify-center">
+          <i className="fa-solid fa-phone"></i>Phone:- +91 1234567890
+        </h2>
+        <h2 className="flex gap-2 items-center justify-center">
+          <i className="fa-solid fa-location-dot"></i>Addresss:- Waralegaon, South
+          Solapur
+        </h2>
       </footer>
       <ToastContainer />
     </section>

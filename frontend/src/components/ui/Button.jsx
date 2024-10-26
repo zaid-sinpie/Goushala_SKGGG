@@ -33,7 +33,7 @@ export const TextButton = ({ children, ...props }) => {
   return (
     <Link
       {...props}
-      className="bg-darkTextBtnBg text-text px-10 py-2 rounded-full shadow-lg hover:underline"
+      className="bg-dark hover:bg-darkTextBtnBg text-text px-10 py-2 rounded-full shadow-lg hover:underline"
     >
       {children}
     </Link>
