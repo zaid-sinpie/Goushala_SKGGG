@@ -28,7 +28,10 @@ const DonatePage = () => {
           method="post"
           className="flex flex-col items-center justify-around gap-2 w-[50%]  max-2xl:w-[70%] max-xl:w-[70%] max-sm:w-full"
         >
-          <Input id="fullName" type="text" title="Full Name" />
+          <div className="flex max-sm:flex-col items-center justify-center w-full gap-2">
+            <Input id="First Name" type="text" title="First Name" />
+            <Input id="Last Name" type="text" title="Last Name" />
+          </div>
           <Input id="phone" type="number" title="Phone Number" />
           <Input id="email" type="text" title="E-mail" />
           <Input
