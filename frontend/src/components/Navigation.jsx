@@ -68,30 +68,41 @@ const Navigation = () => {
             );
           })}
         </div>
-        <i
-          onClick={toggleNav}
-          className="fa-solid fa-bars relative hover:bg-blur p-2 rounded-sm hidden max-sm:block"
+        {!curr ? (
+          <i
+            onClick={toggleNav}
+            className="fa-solid fa-bars hover:bg-blur p-2 rounded-sm hidden max-sm:block"
+          ></i>
+        ) : (
+          <i
+            onClick={toggleNav}
+            className="fa-solid fa-xmark hover:bg-blur p-2 rounded-sm hidden max-sm:block"
+          ></i>
+        )}
+        <div
+          className={`${
+            curr ? "flex " : "hidden "
+          } w-full flex-col items-center justify-center px-10 py-4 gap-4 z-10 absolute top-12 right-0 rounded-sm text-sm bg-dark`}
         >
-          <div className={`${curr ? 'flex ' : 'hidden '} flex-col items-center justify-center px-10 py-4 gap-4 z-10 absolute right-0 rounded-sm text-sm bg-darkTextBtnBg`}>
-            {naviagtionLinks.map((item) => {
-              return (
-                <NavLink
-                  className={({ isActive }) =>
-                    isActive
-                      ? "text-dark underline underline-offset-4"
-                      : "hover:underline underline-offset-4"
-                  }
-                  key={item.id}
-                  to={item.url}
-                  end
-                >
-                  {item.name}
-                  <hr />
-                </NavLink>
-              );
-            })}
-          </div>
-        </i>
+          {naviagtionLinks.map((item) => {
+            return (
+              <NavLink
+                onClick={toggleNav}
+                className={({ isActive }) =>
+                  isActive
+                    ? " font-thin tracking-widest w-full text-center"
+                    : "hover:text-text font-thin tracking-widest text-stroke w-full text-center"
+                }
+                key={item.id}
+                to={item.url}
+                end
+              >
+                {item.name}
+                <hr />
+              </NavLink>
+            );
+          })}
+        </div>
       </div>
     </nav>
   );
