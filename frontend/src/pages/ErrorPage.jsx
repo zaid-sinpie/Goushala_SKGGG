@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const ErrorPage = ({ message }) => {
   return (
-    <section className="w-full h-screen bg-calmbg flex flex-col gap-5 justify-center items-center">
+    <section className="w-full h-screen max-sm:h-auto text-center bg-calmbg flex flex-col gap-5 justify-center items-center">
       <h1 className="text-xl">
         {message ? message : "Something went wrong please try again later"}
       </h1>

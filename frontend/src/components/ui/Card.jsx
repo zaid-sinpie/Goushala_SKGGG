@@ -5,7 +5,7 @@ import Button from "../ui/Button";
 
 const Card = () => {
   return (
-    <div className="flex flex-col justify-between bg-blur w-[60%] max-xl:w-auto max-xl:h-auto max-xl:gap-10 px-10 max-sm:px-5 max-sm:pr-[1rem] py-16 rounded-2xl text-text text-lg font-thin border-text border-[0.5 px] shadow-md h-[80%] max-sm:h-[100%] backdrop-blur-sm">
+    <div className="flex flex-col justify-between bg-blur w-[60%] max-xl:w-auto max-xl:h-auto max-xl:gap-10 px-10 max-sm:px-5 max-sm:pr-[1rem] py-16 max-sm:py-5 rounded-2xl text-text text-lg font-thin border-text border-[0.5 px] shadow-md h-[80%] max-sm:h-[100%] backdrop-blur-sm">
       <div className="flex flex-col items-start justify-between gap-5">
         <img src={logo} alt="logo" className="w-[10rem]" />
         <div className="flex flex-col justify-between items-start gap-2">
