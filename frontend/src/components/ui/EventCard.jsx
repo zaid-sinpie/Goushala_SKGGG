@@ -15,7 +15,7 @@ const EventCard = ({ img, title, paragraph, link }) => {
             im greedy so do the donation right away
           </p>
         </div>
-        <Link to="" className="hover:underline font-semibold w-fit">
+        <Link className="hover:underline font-semibold w-fit">
           Read more
         </Link>
       </div>

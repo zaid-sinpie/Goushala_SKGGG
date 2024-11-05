@@ -5,7 +5,7 @@ import bg1 from "/cow-bgImg0.png";
 
 import Button from "./ui/Button";
 
-const Knowus = () => {
+const Knowus = ({knowUs}) => {
   return (
     <section className="h-screen max-2xl:h-auto max-sm:h-auto w-full relative bg-calmbg overflow-hidden ">
       <div className="h-screen w-full max-sm:h-auto max-2xl:h-auto flex max-xl:flex-col justify-start items-center max-sm:justify-center gap-1 py-5">
@@ -36,9 +36,9 @@ const Knowus = () => {
                 quidem nesciunt neque cumque aperiam nulla itaque.
               </p>
             </div>
-            <Link>
+            {!knowUs ? <Link to="/root/about">
               <Button> Know More </Button>
-            </Link>
+            </Link> : null}
           </div>
         </div>
         <img

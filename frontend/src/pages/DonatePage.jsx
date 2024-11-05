@@ -29,8 +29,8 @@ const DonatePage = () => {
           className="flex flex-col items-center justify-around gap-2 w-[50%]  max-2xl:w-[70%] max-xl:w-[70%] max-sm:w-full"
         >
           <div className="flex max-sm:flex-col items-center justify-center w-full gap-2">
-            <Input id="First Name" type="text" title="First Name" />
-            <Input id="Last Name" type="text" title="Last Name" />
+            <Input id="First_Name" type="text" title="First Name" />
+            <Input id="Last_Name" type="text" title="Last Name" />
           </div>
           <Input id="phone" type="number" title="Phone Number" />
           <Input id="email" type="text" title="E-mail" />
@@ -46,9 +46,10 @@ const DonatePage = () => {
       </div>
       <div className="w-[50%] h-full bg-img1 bg-center flex justify-center items-center max-2xl:hidden">
         <img
-          src={
-            "https://yt3.ggpht.com/W5KUfEayQcQSAAXgv7fgfwAlii6K0HCUFTGoEu6doAbJJCibRHrgImzaObe5Oyq0m6rnjmha5YtSRQ=s640-rw-nd-v1"
-          }
+          // src={
+          //   "https://yt3.ggpht.com/W5KUfEayQcQSAAXgv7fgfwAlii6K0HCUFTGoEu6doAbJJCibRHrgImzaObe5Oyq0m6rnjmha5YtSRQ=s640-rw-nd-v1"
+          // }
+          src="https://yt3.ggpht.com/LHb233PVcZwnmTy7MHc20KfD_tOKV0HkmSJJ2KIeW_Z-eW9ubnO_jiBS469JgiE0uHLOmE9y1Lu0=s640-rw-nd-v1"
           alt=""
           className="w-full"
         />

@@ -52,7 +52,7 @@ export async function action({ request, params }) {
   const data = Object.fromEntries(formData.entries());
 
   try {
-    const response = await fetch("http://localhost:3000", {
+    const response = await fetch("http://localhost:3000/contact", {
       headers: {
         "Content-Type": "application/json",
       },

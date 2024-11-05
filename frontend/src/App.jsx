@@ -7,6 +7,7 @@ import { action as formDataAction } from "./pages/Contact";
 import Aboutpage from "./pages/Aboutpage";
 import DonatePage, { action as donateAction } from "./pages/DonatePage";
 import ErrorPage from "./pages/ErrorPage";
+import Events from "./components/Events";
 
 const router = createBrowserRouter([
   {

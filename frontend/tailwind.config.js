@@ -29,6 +29,7 @@ export default {
       label: "#525252",
       slate50: "#f8fafc",
       red50: "#fef2f2",
+      errorText: "#FF004D",
     },
     fontFamily: {
       cursive: '"Cedarville Cursive", cursive;',
