@@ -19,9 +19,9 @@ const Contact = () => {
           >
             <h1 className="uppercase font-semibold text-xl">contact</h1>
             <div className="w-[60%] max-2xl:w-[80%] max-sm:w-full px-5 flex flex-col justify-center items-center gap-5 ">
-              <Input id={"fullName"} title={"Full Name"} />
-              <Input id={"email"} title={"Email"} type={"email"} />
-              <TextArea id={"message"} title={"Message"} />
+              <Input id={"fullName"} title={"Full Name"} name="fullName" />
+              <Input id={"email"} title={"Email"} type={"email"} name="email"/>
+              <TextArea id={"message"} title={"Message"} name="message"/>
               <ButtonFull type="submit">Submit</ButtonFull>
             </div>
           </Form>

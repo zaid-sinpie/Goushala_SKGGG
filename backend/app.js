@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 const formSubmitControllers = require("./controllers/donate");
+const contactSubmitController = require("./controllers/contact");
 
 const app = express();
 
@@ -13,10 +14,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.post("/donate", formSubmitControllers.donateFormSubmite);
 
-app.post("/contact", (req, res, next) => {
-  console.log("In the contact middleware");
-  res.send({ message: "Data received successfully!" });
-});
+app.post("/contact", contactSubmitController.allContactsubmissions);
 
 app.use("/", (req, res, next) => {
   res.send("<h1>Hello, World!</h1>");
