@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Text } from "./Button";
 
 import cowBg from "/cow-img2.png";
 
@@ -15,9 +15,7 @@ const EventCard = ({ img, title, paragraph, link }) => {
             im greedy so do the donation right away
           </p>
         </div>
-        <Link className="hover:underline font-semibold w-fit">
-          Read more
-        </Link>
+        <Text>Read More</Text>
       </div>
     </figure>
   );

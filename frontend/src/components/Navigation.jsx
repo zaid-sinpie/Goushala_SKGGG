@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink,Link } from "react-router-dom";
 
 import { useState } from "react";
 
@@ -37,15 +37,20 @@ const Navigation = () => {
   const toggleNav = () => {
     setCurr((prev) => !prev);
   };
+
   return (
     <nav className="w-full bg-blur backdrop-blur-md max-sm:py-0 px-8 flex text-text fixed top-0 left-0 shadow-lg z-20">
       <div className="flex justify-between items-center w-full">
-        <div className="flex items-center justify-center">
+        <div
+          className="flex items-center justify-center"
+        >
+          <Link to={'/root'}>
           <img
             src={logo}
             alt="logo header"
             className="w-[5rem] max-sm:w-[4rem] cursor-pointer"
           />
+          </Link>
           <p className="pointer-events-none select-none max-lg:hidden">
             Shri Krushna Gokuldam Gouseva Goushala
           </p>

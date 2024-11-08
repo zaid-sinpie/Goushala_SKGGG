@@ -42,10 +42,10 @@ const Tasks = () => {
     >
       <div className="w-full flex flex-col justify-center items-center px-20 max-2xl:px-10 max-sm:px-4 gap-5">
         <div className="w-full flex flex-col justify-start items-center">
-          <h1 className="text-5xl max-sm:text-2xl font-bold text-start">
+          <h1 className="text-5xl max-sm:text-2xl font-bold text-center">
             Our Events, <br /> Gatherings & News
           </h1>
-          <p className="w-[60%] max-2xl:w-[90%] text-start max-sm:w-full max-sm:text-justify">
+          <p className="w-[60%] max-2xl:w-[90%] text-center max-sm:w-full max-sm:text-justify">
             Thank you for your support and all that donation in advance that
             you're going to donate. Don't think that I’ll let you go that easily
             without giving me a good, bulky donation. I accept goth girls as
