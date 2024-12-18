@@ -40,7 +40,7 @@ const Tasks = () => {
         currEvents ? "h-screen" : "h-auto"
       } max-2xl:h-auto max-sm:h-auto w-full bg-calmbg flex flex-col justify-center items-center gap-10 py-10`}
     >
-      <div className="w-full flex flex-col justify-center items-center px-20 max-2xl:px-10 max-sm:px-4 gap-5">
+      <div className="w-full flex flex-col justify-center items-center px-20 max-2xl:px-10 max-sm:px-4 gap-5 mt-20">
         <div className="w-full flex flex-col justify-start items-center">
           <h1 className="text-5xl max-sm:text-2xl font-bold text-center">
             Our Events, <br /> Gatherings & News
@@ -54,7 +54,7 @@ const Tasks = () => {
         </div>
         <div className="w-full py-5 flex justify-center flex-wrap gap-5">
           {loop.map((item) => (
-            <Task key={item} id={item} />
+            <Task key={item} />
           ))}
         </div>
       </div>

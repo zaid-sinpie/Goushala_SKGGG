@@ -1,6 +1,7 @@
-import EventCard from "../components/ui/EventCard";
+import { useParams } from "react-router-dom";
+// import eventsData from "../data/eventsData"; // Move events data to a shared file for reusability
 
-const EventsPage = () => {
+const EventPage = () => {
   const eventsData = [
     {
       img: "",
@@ -51,27 +52,23 @@ const EventsPage = () => {
     //   event: "art-music-gala",
     // },
   ];
+  const { eventId } = useParams();
+
+  const event = eventsData.find((e) => e.event === eventId);
+
+  // Redirect to the events list if the event is invalid
+  if (!event) {
+    throw new Error("Invalid Event ID");
+  }
 
   return (
-    <section className="h-auto max-2xl:h-auto max-sm:h-auto w-dvw bg-calmbg flex flex-col justify-center items-center gap-10 py-10 ">
-      <div className="w-full flex flex-col justify-start max-sm:items-start items-center px-20 py-10 max-2xl:px-10 max-sm:px-4 gap-5">
-        <h1 className="text-5xl max-sm:text-2xl font-bold text-center max-sm:text-start">
-          Our Events, <br /> Gatherings & News
-        </h1>
-        <p className="w-[60%] max-2xl:w-[90%] text-center max-sm:w-full max-sm:text-justify">
-          Thank you for your support and all that donation in advance that your
-          going to donate dont think that I’ll let you go that easily without
-          giving me good bulky doantion I accept goth girls as well if you want
-          to donate them I’ll gladly take them.
-        </p>
-        <div className="w-full py-5 flex justify-center max-2xl:justify-center flex-wrap flex-1 gap-5">
-          {eventsData.map((event, idx) => (
-            <EventCard key={idx} event={event} />
-          ))}
-        </div>
+    <section className="w-screen h-screen flex justify-center items-center">
+      <div className="text-center">
+        <h1 className="text-3xl font-bold">{event.title}</h1>
+        <p className="mt-4">{event.paragraph}</p>
       </div>
     </section>
   );
 };
 
-export default EventsPage;
+export default EventPage;

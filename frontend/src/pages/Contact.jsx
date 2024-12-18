@@ -40,7 +40,7 @@ const Contact = () => {
           Solapur
         </h2>
       </footer>
-      <ToastContainer />
+      <ToastContainer />c
     </section>
   );
 };

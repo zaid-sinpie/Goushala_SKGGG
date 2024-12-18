@@ -1,5 +1,4 @@
-import React from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import Task from "../components/ui/Task";
 
 const TaskPage = () => {
   const tasks = [
@@ -44,20 +43,26 @@ const TaskPage = () => {
       event: "nature-exploration-camp",
     },
   ];
-  const { taskId } = useParams();
-
-  const task = tasks.find((t) => t.event === taskId);
-
-  // Redirect to the tasks list if the task is invalid
-  if (!task) {
-    throw new Error("No route found");
-  }
 
   return (
-    <section className="w-screen h-screen flex justify-center items-center">
-      <div className="text-center">
-        <h1 className="text-3xl font-bold">{task.title}</h1>
-        <p className="mt-4">{task.paragraph}</p>
+    <section className="h-auto max-2xl:h-auto max-sm:h-auto w-full bg-calmbg flex flex-col justify-center items-center gap-10 py-20 ">
+      <div className="w-full flex flex-col justify-center items-center px-20 max-2xl:px-10 max-sm:px-4 gap-5">
+        <div className="w-full flex flex-col justify-center items-center text-center">
+          <h1 className="text-5xl max-sm:text-2xl font-bold">
+            Our Events, <br /> Gatherings & News
+          </h1>
+          <p className="w-[60%] max-2xl:w-[90%] text-center max-sm:w-full max-sm:text-justify">
+            Thank you for your support and all that donation in advance that
+            your going to donate dont think that I’ll let you go that easily
+            without giving me good bulky doantion I accept goth girls as well if
+            you want to donate them I’ll gladly take them.
+          </p>
+        </div>
+        <div className="w-full py-5 flex justify-center items-center flex-wrap gap-10">
+          {tasks.map((task, idx) => (
+            <Task key={idx} number={idx} task={task} />
+          ))}
+        </div>
       </div>
     </section>
   );

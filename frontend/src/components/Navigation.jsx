@@ -1,4 +1,4 @@
-import { NavLink,Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 import { useState } from "react";
 
@@ -20,14 +20,25 @@ const naviagtionLinks = [
   //   id: 3,
   //   url: "contact",
   // },
+
+  {
+    name: "Events",
+    id: 4,
+    url: "events",
+  },
+  {
+    name: "Tasks",
+    id: 5,
+    url: "tasks",
+  },
   {
     name: "Donate",
-    id: 4,
+    id: 6,
     url: "donate",
   },
   {
     name: "Adopt",
-    id: 5,
+    id: 7,
     url: "adopt",
   },
 ];
@@ -41,15 +52,13 @@ const Navigation = () => {
   return (
     <nav className="w-full bg-blur backdrop-blur-md max-sm:py-0 px-8 flex text-text fixed top-0 left-0 shadow-lg z-20">
       <div className="flex justify-between items-center w-full">
-        <div
-          className="flex items-center justify-center"
-        >
-          <Link to={'/root'}>
-          <img
-            src={logo}
-            alt="logo header"
-            className="w-[5rem] max-sm:w-[4rem] cursor-pointer"
-          />
+        <div className="flex items-center justify-center">
+          <Link to={"/root"}>
+            <img
+              src={logo}
+              alt="logo header"
+              className="w-[5rem] max-sm:w-[4rem] cursor-pointer"
+            />
           </Link>
           <p className="pointer-events-none select-none max-lg:hidden">
             Shri Krushna Gokuldam Gouseva Goushala

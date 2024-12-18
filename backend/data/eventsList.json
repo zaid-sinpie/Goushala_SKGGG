@@ -1,0 +1,38 @@
+[
+    {
+      "img": "",
+      "title": "Annual Charity Run",
+      "paragraph": "Join us for a thrilling charity run to raise funds for underprivileged children. A day of fun, fitness, and purpose awaits!",
+      "link": "/events/charity-run",
+      "event": "charity-run"
+    },
+    {
+      "img": "",
+      "title": "Tech Innovation Summit",
+      "paragraph": "Explore the latest in tech and innovation at our annual summit. Network with industry leaders and learn about cutting-edge advancements.",
+      "link": "/events/tech-summit",
+      "event": "tech-summit"
+    },
+    {
+      "img": "",
+      "title": "Community Clean-Up Drive",
+      "paragraph": "Take part in our clean-up drive to make the city cleaner and greener. Let's work together to create a better environment for everyone.",
+      "link": "/events/cleanup-drive",
+      "event": "cleanup-drive"
+    },
+    {
+      "img": "",
+      "title": "Food Festival Extravaganza",
+      "paragraph": "Savor flavors from around the world at our annual food festival. A treat for foodies and families alike!",
+      "link": "/events/food-festival",
+      "event": "food-festival"
+    },
+    {
+      "img": "",
+      "title": "Art and Music Gala",
+      "paragraph": "Immerse yourself in a night of artistic expression and soulful music. Featuring renowned artists and musicians.",
+      "link": "/events/art-music-gala",
+      "event": "art-music-gala"
+    }
+  ]
+  
