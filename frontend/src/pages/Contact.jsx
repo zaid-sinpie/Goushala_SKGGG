@@ -10,7 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
   return (
     <section className="h-screen w-full max-2xl:h-auto bg-img2 bg-fixed bg-center bg-cover overflow-hidden flex justify-center items-center px-2 py-20 max-xl:py-52 max-sm:py-40 relative">
-      <div className="h-[70%] w-[60%] max-2xl:w-[50%] max-lg:w-[80%] max-sm:w-full bg-white rounded-xl border-2 border-stroke flex items-center justify-center shadow-2xl">
+      <div className="h-[100%] w-[60%] max-2xl:w-[50%] max-lg:w-[80%] max-sm:w-full bg-white rounded-xl border-2 border-stroke flex items-center justify-center shadow-2xl">
         <div className="w-[50%] h-full bg-kunal bg-cover bg-center rounded-l-lg max-2xl:hidden"></div>
         <div className="w-[50%] max-2xl:w-full h-full rounded-r-lg py-5">
           <Form
@@ -18,7 +18,7 @@ const Contact = () => {
             className="flex flex-col gap-5 justify-center items-center h-full w-full"
           >
             <h1 className="uppercase font-semibold text-xl">contact</h1>
-            <div className="w-[60%] max-2xl:w-[80%] max-sm:w-full px-5 flex flex-col justify-center items-center gap-5 ">
+            <div className="w-[80%] max-2xl:w-[80%] max-sm:w-full px-5 flex flex-col justify-center items-center gap-5 ">
               <Input id={"fullName"} title={"Full Name"} name="fullName" />
               <Input id={"email"} title={"Email"} type={"email"} name="email"/>
               <TextArea id={"message"} title={"Message"} name="message"/>
