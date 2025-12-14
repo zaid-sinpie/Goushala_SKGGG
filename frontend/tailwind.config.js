@@ -24,7 +24,7 @@ export default {
       dark: "#000",
       darkTextBtnBg: "#343434",
       dullText: "#e4e4e4",
-      calmbg: "#FFFAFA",
+      calmbg: "#efefef",
       stroke: "#CDCDCD",
       label: "#525252",
       slate50: "#f8fafc",
