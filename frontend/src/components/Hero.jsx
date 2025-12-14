@@ -6,8 +6,8 @@ import logo from "/logo.png";
 
 const Hero = () => {
   return (
-    <section className="h-screen w-full bg-img1 bg-center bg-fixed bg-cover flex justify-start max-sm:items-center pl-10 overflow-hidden pt-20">
-      <article className="w-[50%] h-fit max-sm:h-auto max-2xl:py-10 max-xl:py-10 max-sm:py-5 px-10 rounded-lg max-sm:w-[90%] max-xl:w-[90%] flex flex-col justify-center items-start max-lg:gap-[3rem] max-2xl:gap-[3rem] max-sm:gap-5 max-sm:text-xl bg-blur backdrop-blur-md shadow-xl animate-slideInFromLeft">
+    <section className="h-screen w-full bg-img1 bg-center bg-fixed bg-cover flex justify-start items-end pl-10 overflow-hidden pb-5">
+      <article className="w-[50%] h-fit max-sm:h-auto max-2xl:py-10 max-xl:py-10 max-sm:py-5 px-10 rounded-lg max-sm:w-[90%] flex flex-col justify-center items-start gap-5 max-sm:text-xl bg-blur backdrop-blur-md shadow-xl animate-slideInFromLeft">
         <div className="max-lg:text-xl max-xl:text-lg w-full flex flex-col justify-center items-start text-start text-[20px]">
           <img src={logo} alt="" className="w-[100px] max-sm:w-[40%]" />
           <h1 className="font-bold">Shri Krushna Gokuldam Goushala</h1>
