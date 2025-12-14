@@ -46,9 +46,9 @@ const TaskPage = () => {
 
   return (
     <section className="h-auto max-2xl:h-auto max-sm:h-auto w-full bg-calmbg flex flex-col justify-center items-center gap-10 py-20">
-      <div className="w-full flex flex-col justify-start items-start px-20 max-2xl:px-10 max-sm:px-4 gap-1">
+      <div className="w-full flex flex-col justify-start items-start px-20 max-sm:px-4 gap-1">
         <div className="w-full flex flex-col justify-center items-start text-start">
-          <h1 className="text-[24px] font-bold">
+          <h1 className="text-[26px] uppercase font-bold">
             Our Events, <br /> Gatherings & News
           </h1>
           <p className="w-[60%] text-start max-sm:w-full max-sm:text-justify text-[14px]">
