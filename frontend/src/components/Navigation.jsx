@@ -60,9 +60,6 @@ const Navigation = () => {
               className="w-[5rem] max-sm:w-[4rem] cursor-pointer"
             />
           </Link>
-          <p className="pointer-events-none select-none max-lg:hidden">
-            Shri Krushna Gokuldam Gouseva Goushala
-          </p>
         </div>
         <div className="flex gap-8 max-sm:hidden">
           {naviagtionLinks.map((item) => {
