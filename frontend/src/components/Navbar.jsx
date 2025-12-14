@@ -33,7 +33,7 @@ const Navbar = () => {
           <ul key={item.id} className="flex gap-4 items-center justify-around">
             <NavLink
               to={item.path}
-              className="hover:underline underline-offset-4"
+              className="hover:underline underline-offset-4 text-[14px]"
             >
               {item.name}
             </NavLink>

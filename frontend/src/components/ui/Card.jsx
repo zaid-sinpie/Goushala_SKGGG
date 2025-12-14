@@ -5,7 +5,7 @@ import Button from "../ui/Button";
 
 const Card = () => {
   return (
-    <div className="flex flex-col justify-between bg-blur w-[60%] max-xl:w-auto max-xl:h-auto gap-5 max-xl:gap-10 px-10 max-sm:px-5 max-sm:pr-[1rem] py-5 rounded-2xl text-text text-lg font-thin border-text border-[0.5 px] shadow-md max-sm:h-[100%] backdrop-blur-sm">
+    <figure className="flex flex-col justify-between bg-blur w-[60%] max-xl:w-auto max-xl:h-auto gap-5 px-5 py-5 rounded-md text-text text-lg font-thin border-text shadow-md max-sm:h-[100%] backdrop-blur-sm">
       <div className="flex flex-col items-start justify-between gap-5">
         <img src={logo} alt="logo" className="w-[10rem]" />
         <div className="flex flex-col justify-between items-start gap-2">
@@ -13,7 +13,7 @@ const Card = () => {
             Shri Krushna <br />
             Gokuldam Goushala
           </h1>
-          <p className="text-[20px]">
+          <p className="text-[14px]">
             Life is too much hard for us <strong>Humans</strong>,<br />
             Just Think About <strong>Animals</strong>,
             <br />
@@ -34,7 +34,7 @@ const Card = () => {
           <Button>Adopt</Button>
         </div>
       </div>
-    </div>
+    </figure>
   );
 };
 
