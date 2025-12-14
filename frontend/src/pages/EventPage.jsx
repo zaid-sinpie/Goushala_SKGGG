@@ -43,20 +43,11 @@ const EventPage = () => {
       link: "art-music-gala",
       event: "art-music-gala",
     },
-    // {
-    //   img: "",
-    //   title: "Art and Music Gala",
-    //   paragraph:
-    //     "Immerse yourself in a night of artistic expression and soulful music. Featuring renowned artists and musicians.",
-    //   link: "art-music-gala",
-    //   event: "art-music-gala",
-    // },
   ];
   const { eventId } = useParams();
 
   const event = eventsData.find((e) => e.event === eventId);
 
-  // Redirect to the events list if the event is invalid
   if (!event) {
     throw new Error("Invalid Event ID");
   }

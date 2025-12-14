@@ -42,29 +42,21 @@ const EventsPage = () => {
       link: "art-music-gala",
       event: "art-music-gala",
     },
-    // {
-    //   img: "",
-    //   title: "Art and Music Gala",
-    //   paragraph:
-    //     "Immerse yourself in a night of artistic expression and soulful music. Featuring renowned artists and musicians.",
-    //   link: "art-music-gala",
-    //   event: "art-music-gala",
-    // },
   ];
 
   return (
-    <section className="h-auto max-2xl:h-auto max-sm:h-auto w-dvw bg-calmbg flex flex-col justify-center items-center gap-10 py-10 ">
-      <div className="w-full flex flex-col justify-start max-sm:items-start items-center px-20 py-10 max-2xl:px-10 max-sm:px-4 gap-5">
-        <h1 className="text-5xl max-sm:text-2xl font-bold text-center max-sm:text-start">
+    <section className="h-auto max-sm:h-auto w-screen bg-calmbg flex flex-col justify-center items-center gap-10 py-10">
+      <div className="w-full flex flex-col justify-start items-start px-20 py-10 max-sm:px-4 gap-1">
+        <h1 className="text-[26px] font-bold text-start uppercase">
           Our Events, <br /> Gatherings & News
         </h1>
-        <p className="w-[60%] max-2xl:w-[90%] text-center max-sm:w-full max-sm:text-justify">
+        <p className="w-full text-start max-sm:text-justify text-[14px]">
           Thank you for your support and all that donation in advance that your
           going to donate dont think that I’ll let you go that easily without
           giving me good bulky doantion I accept goth girls as well if you want
           to donate them I’ll gladly take them.
         </p>
-        <div className="w-full py-5 flex justify-center max-2xl:justify-center flex-wrap flex-1 gap-5">
+        <div className="w-full py-5 flex justify-start flex-wrap flex-1 gap-5">
           {eventsData.map((event, idx) => (
             <EventCard key={idx} event={event} />
           ))}
