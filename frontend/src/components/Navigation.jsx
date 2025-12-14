@@ -15,12 +15,6 @@ const naviagtionLinks = [
     id: 2,
     url: "about",
   },
-  // {
-  //   name: "Contact",
-  //   id: 3,
-  //   url: "contact",
-  // },
-
   {
     name: "Events",
     id: 4,
@@ -67,8 +61,8 @@ const Navigation = () => {
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "text-dark underline underline-offset-4"
-                    : "hover:underline underline-offset-4"
+                    ? "text-dark underline underline-offset-4 text-[14px]"
+                    : "hover:underline underline-offset-4 text-[14px]"
                 }
                 key={item.id}
                 to={item.url}

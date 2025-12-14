@@ -44,7 +44,7 @@ export const Text = ({ children, link }, props) => {
     <Link
       to={link}
       {...props}
-      className="font-semibold underline tracking-wide hover:tracking-wider w-fit"
+      className="font-semibold text-[12px] underline tracking-wide hover:tracking-wider w-fit"
     >
       {children}
     </Link>
