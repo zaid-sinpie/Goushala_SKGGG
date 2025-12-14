@@ -48,7 +48,6 @@ const TaskPage = () => {
 
   const task = tasks.find((t) => t.event === taskId);
 
-  // Redirect to the tasks list if the task is invalid
   if (!task) {
     throw new Error("No route found");
   }
